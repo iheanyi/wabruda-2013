@@ -16,10 +16,12 @@ section {
 }
 
 footer {
-	max-width: 75vw;
-	margin: auto;
-	padding-bottom: 5vh;
+	max-width: 80vw;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
 	position: relative;
+	overflow: auto;
+	margin: auto;
 }
 
 /* Slides CSS */
@@ -96,7 +98,7 @@ footer {
 /* Layout CSS */
 .layout-all-center {
 	width: 50vw;
-	height: 50vh;
+	height: 45vh;
 	overflow: auto;
 	margin: auto;
 	position: absolute;
