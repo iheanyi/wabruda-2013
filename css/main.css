@@ -66,18 +66,25 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: 100vw 100vh;
+    background-size: cover;
 	background-repeat:no-repeat;
 	max-width: 100vw;
 	z-index: 0;
-	-moz-filter: blur(5px);
+	/*-moz-filter: blur(5px);
 	-webkit-filter: blur(5px);
-	filter: blur(5px);
+	filter: blur(5px);*/
 
 }
 
 .bg-top {
-	background-image: url('http://www3.nd.edu/~wabruda/img/homebanner.jpg');
+	background-image: url("../img/top-bg-blur.png");
+	/*width: 20%;
+ 	height: 20%;
+ 	-webkit-transform-origin: top left;
+  	-webkit-transform: scale(5);
+	-moz-filter: blur(5px);
+	-webkit-filter: blur(5px);
+	filter: blur(5px);*/
 
 }
 

@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$.stellar();
 
 	console.log("Loading Nav.");
-	$('#nav').onePageNav();
+	$('.navbar').onePageNav();
 
 	console.log("LOADED");
 
@@ -11,8 +11,12 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
+	$('.navbar a').click(function() {
+		$("li.active").removeClass("active");
+	});
+
 	console.log("Now we're just checking something else...");
-	
+
 	$('.nav a').on('click', function() {
 
 		if ($('.navbar-toggle').is(":visible")) {
