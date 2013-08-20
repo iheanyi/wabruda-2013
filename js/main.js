@@ -1,9 +1,16 @@
-$.stellar();
+$(document).ready(function() {
+	$.stellar();
 
-$('.nav a').on('click', function(){
-	if ($('.navbar-toggle').is(":visible")) {
-		$('.navbar-toggle').click();
-	}
+	console.log("Loading Nav.");
+	//$('#nav').onePageNav();
+
+	console.log("LOADED");;
+	$('.nav a').on('click', function(){
+		if ($('.navbar-toggle').is(":visible")) {
+			$('.navbar-toggle').click();
+		}
+	});
 });
+
 
 //if ($('.navbar-toggle').is(":visible")) $('.navbar-toggle').click();
