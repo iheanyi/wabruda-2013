@@ -1,0 +1,56 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	/*padding-top: 70px;*/
+	padding-bottom: 40px;
+}
+
+.top-slide {
+	height: 575px;
+	position: relative;
+}
+
+.mission-slide {
+	height: 400px;
+	position: relative;
+}
+
+.what-slide {
+	height: 500px;
+	position: relative;
+}
+
+.who-slide {
+	height: 500px;
+	position: relative;
+}
+
+.join-slide {
+	height: 500px;
+	position: relative;
+}
+
+.slide {
+	height: 600px;
+}
+
+section {
+	padding: 70px;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
