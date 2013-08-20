@@ -5,9 +5,10 @@
    ========================================================================== */
 
 
-.top-slide {
-
+body {
+	background: #fff;
 }
+
 
 .mission-slide {
 
@@ -30,12 +31,36 @@
 .slide {
 	height: 100vh;
 	position: relative;
+	max-width: 150vh;
+	margin: 0 auto 0 auto;
+}
+
+.group-image {
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	background-image: url('http://www3.nd.edu/~wabruda/img/homebanner.jpg');
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+    background-size:cover;
+	max-width: 200vh;
+	-webkit-filter: blur(7px);
+
+}
+
+.top-slide {
+	max-width: 200vh;
+	color: #fff;
+
 }
 
 section {
 	padding-top: 40px;
 	display: block;
 }
+
 
 .layout-all-center {
 	width: 50%;
@@ -81,7 +106,7 @@ section div {
 }
 
 .layout-vertical-center {
-	height: 100vh;
+	height: 50vh;
 	overflow: inherit;
 }
 
