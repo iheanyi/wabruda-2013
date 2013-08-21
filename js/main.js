@@ -6,7 +6,7 @@ $(document).ready(function() {
 	onScrollEnd();
 
 	var panels = $('.slide');
-	var links =  $('#nav li');
+	var links =  $('.nav li');
 
 	var secondLink = $(links[1]).children("a:first").attr('href');
 	console.log(panels.length);
@@ -60,7 +60,7 @@ $(document).ready(function() {
 
 		console.log(currentLocation);
 
-		if(currentLocation < secondTop) {
+		if(currentLocation < viewportHeight) {
 			console.log("Adding class.");
 			navbar.addClass('hidden');
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
     var navbar = $('.navbar');
 
-	var links =  $('#nav li');
+	var links =  $('.nav li');
 	var panelIndex;
 
 	$(window).scroll(function () {
