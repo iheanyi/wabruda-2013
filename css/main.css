@@ -176,14 +176,6 @@ a:active.navbar-brand{
 }
 
 /* Layout CSS */
-.layout-title-center {
-	width: 50vw;
-	height: 50vh;
-	overflow: auto;
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0; 
-}
 
 h1 {
 	padding-bottom: 5vh;
@@ -193,7 +185,7 @@ h1 {
 .layout-vertical-center, .layout-vertical-center section {
 	width: 80vw;
 	height: 50vh;
-	overflow: auto;
+	overflow: visible;
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0; 
