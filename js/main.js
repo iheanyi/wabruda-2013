@@ -45,8 +45,6 @@ $(document).ready(function() {
 		$("li.active").removeClass("active");
 		$(this).addClass('active');
 		var href = $(this).children("a:first").attr('href');
-		window.location.hash = href;
-
 		console.log(href);
 
 	});
