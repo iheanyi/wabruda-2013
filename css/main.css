@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* Element CSS */
-@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two');
+@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two:400,700|Tangerine');
 
 body {
 	background: #fff;
@@ -31,11 +31,13 @@ p {
 
 
 h1.wabruda {
-	font-family: 'Lobster', cursive;
-	font-size: 4.0em;
+	font-family: 'Lobster Two', sans-serif, serif, cursive;
+	font-weight: 700;
+	font-size: 5.0em;
 	/*text-shadow: 7px 7px 2px rgba(150, 150, 150, 0.5);*/
 	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
 }
+
 .motto {
 	font-family: 'Josefin Slab', serif;
 	font-size: 1.5em;
@@ -103,6 +105,7 @@ div p {
 
 .bg-top {
 	background-image: url("../img/top-bg-blur.png");
+	background-color: #000;
 	opacity: 0.75;
 	/*width: 20%;
  	height: 20%;
