@@ -35,13 +35,6 @@ $(document).ready(function() {
 	   scrollTimeout = null;
 	}
 
-	function checkViewport() {
-		if(viewportWidth < 768) {
-			navbar.removeClass('hidden');
-		} else {
-			navbar.addClass('hidden');
-		}
-	}
 
 	console.log("Loading Nav.");
 	console.log(window.location.hash);
@@ -93,12 +86,18 @@ $(document).ready(function() {
 	var panelTops = [];
 
 	$(window).on("resize", findViewportDimen);
-
-	checkViewPort();
-
-
-
     var navbar = $('.navbar');
+
+	checkViewport();
+
+	function checkViewport() {
+		if(viewportWidth < 768) {
+			navbar.removeClass('hidden');
+		} else {
+			navbar.addClass('hidden');
+		}
+	}
+
 
 	var links =  $('.nav li');
 	var panelIndex;
