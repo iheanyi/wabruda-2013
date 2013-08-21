@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* Element CSS */
-@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two:400,700|Tangerine');
+@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two:400,700|Lato:300,400');
 
 body {
 	background: #fff;
@@ -29,6 +29,11 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.navbar {
+	background-color: rgba(0,0,0,0.09);
+	border:0;
+}
+
 a.wabruda {
 	font-family: 'Lobster Two', sans-serif, serif, cursive;
 	font-weight: 700;
@@ -36,10 +41,13 @@ a.wabruda {
 	font-size: 2.0em;
 }
 
-.navbar {
-	background-color: rgba(0,0,0,0.09);
-	border:0;
+.brand {
+	font-family: 'Lobster Two', sans-serif, serif, cursive;
+	font-weight: 700;
+	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
+	font-size: 2.0em;	
 }
+
 
 .brand {
 	color: #fff;
@@ -64,9 +72,10 @@ div h1 {
 	font-size: 4.0em;
 }
 
-div p {
-	font-family: 'Open Sans', serif;
-	font-size: 1.0em;
+.layout-vertical-center p {
+	font-family: 'Lato', serif;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 /* Slides CSS */
 
@@ -205,15 +214,19 @@ section div {
 
 
 .layout-all-center {
-	height: 75vh;
-	width: 75vw;
+	height: 150vh;
+	width: 100vw;
 	overflow: visible;
 }
 
 .layout-all-center.layout-mobile-center {
-	height: 50vh;
+	height: 100vh;
 	width: 100vw;
 	overflow: inherit;
+}
+
+h1.wabruda {
+	font-size:3.0em;
 }
 
 
