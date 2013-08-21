@@ -5,6 +5,7 @@
    ========================================================================== */
 
 /* Element CSS */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two);
 
 body {
 	background: #fff;
@@ -24,6 +25,29 @@ footer {
 	margin: auto;
 }
 
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h1.wabruda {
+	font-family: 'Lobster', cursive;
+	font-size: 4.0em;
+}
+.motto {
+	font-family: 'Open Sans', serif;
+	font-size: 1.5em;
+}
+
+div h1 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 3.0em;
+}
+
+div p {
+	font-family: 'Open Sans', serif;
+	font-size: 1.0em;
+}
 /* Slides CSS */
 
 .slide {
@@ -70,9 +94,7 @@ footer {
 	background-repeat:no-repeat;
 	max-width: 100vw;
 	z-index: 0;
-	/*-moz-filter: blur(5px);
-	-webkit-filter: blur(5px);
-	filter: blur(5px);*/
+
 
 }
 
