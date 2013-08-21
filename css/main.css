@@ -5,16 +5,17 @@
    ========================================================================== */
 
 /* Element CSS */
-@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans:400,700,800,600,300|Lobster+Two:400,700|Lato:300,400');
+@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Lobster:400,700|Lato:300,400|Roboto:400,100,100italic');
 
 body {
 	background: #fff;
+	font-size: 120%;
 }
 
-* {
+/** {
 	font-family: 'Lato', sans-serif, serif;
 	font-weight: 300;
-}
+}*/
 
 section {
 	padding-top: 40px;
@@ -28,36 +29,61 @@ footer {
 	position: relative;
 	overflow: auto;
 	margin: auto;
-	font-size: 1.15em;
+	font-size: 0.75em;
+}
+
+h1.wabruda {
+	font-family: 'Lobster', sans-serif, serif, cursive;
+	font-weight: 700;
+	font-size: 5.0em;
+	/*text-shadow: 7px 7px 2px rgba(150, 150, 150, 0.5);*/
+	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
+}
+
+div h1 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 4.0em;
 }
 
 p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	font-size: 1.5em;
+}
+
+p.motto {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	text-shadow: 5px 3px 5px rgba(150,150,150,0.6);
+	font-size: 1.50em;
 }
 
 .navbar {
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 1.1em;
 	background-color: rgba(0,0,0,0.09);
 	border:0;
 }
 
-.navbar-brand {
-	font-family: 'Lobster Two', sans-serif, serif, cursive;
-	font-weight: 700;
+a.navbar-brand, .navbar-brand {
+	font-family: 'Lobster', sans-serif, serif, cursive;
+	font-weight: 400;
 	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
 	font-size: 1.5em;
 }
 
-a:link.wabruda, a:visited.wabruda {
+a:link.navbar-brand, a:visited.navbar-brand {
 	color: #fff;
 }
 
-a:hover.wabruda {
+a:hover.navbar-brand {
 	color: #FFEFA5;
 	opacity: 0.5;
 }
 
-a:active.wabruda {
+a:active.navbar-brand{
 	color: #fff;
 }
 
@@ -81,35 +107,23 @@ a:active.wabruda {
 
 
 
-h1.wabruda {
-	font-family: 'Lobster Two', sans-serif, serif, cursive;
-	font-weight: 700;
-	font-size: 5.0em;
-	/*text-shadow: 7px 7px 2px rgba(150, 150, 150, 0.5);*/
-	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
-}
 
-.motto {
-	font-family: 'Josefin Slab', serif;
-	font-size: 1.5em;
-	text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);
-}
 
-div h1 {
-	font-family: 'Josefin Slab', serif;
-	font-size: 4.0em;
-}
 
+
+/*
 .layout-vertical-center p {
 	font-family: 'Lato', serif;
 	font-size: 1.5em;
 	font-weight: 300;
-}
+}*/
+
 /* Slides CSS */
 
 .slide {
 	height: 100vh;
 	max-width: 100vw;
+	max-height: 150vh;
 	margin:0 auto 0 auto;
 	position: relative;
 	z-index:1;
@@ -119,20 +133,11 @@ div h1 {
 	color: #fff;
 }
 
-/*
-.what-slide {
+.top-slide {
+	font-size: 1.5em;
+	/*text-shadow: 5px 3px 5px rgba(150, 150, 150, 0.7);*/
 }
 
-.who-slide {
-
-}
-
-.join-slide {
-}
-
-.event-slide {
-
-}*/
 
 /* Images and Backgrounds */
 
@@ -146,22 +151,12 @@ div h1 {
 	background-repeat:no-repeat;
 	max-width: 100vw;
 	z-index: 0;
-
-
 }
 
 .bg-top {
 	background-image: url("../img/top-bg-blur.png");
 	background-color: #000;
 	opacity: 0.75;
-	/*width: 20%;
- 	height: 20%;
- 	-webkit-transform-origin: top left;
-  	-webkit-transform: scale(5);
-	-moz-filter: blur(5px);
-	-webkit-filter: blur(5px);
-	filter: blur(5px);*/
-
 }
 
 .bg-mission {
@@ -181,28 +176,21 @@ div h1 {
 }
 
 /* Layout CSS */
-.layout-all-center {
+.layout-title-center {
 	width: 50vw;
-	height: 45vh;
+	height: 50vh;
 	overflow: auto;
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0; 
 }
 
-.motto h1 {
+h1 {
 	padding-bottom: 5vh;
 }
 
-.layout-vertical-center h1 {
-	padding-bottom: 5vh;
-}
 
-.layout-all-center h1 {
-	padding-bottom: 5vh;
-}
-
-.layout-vertical-center {
+.layout-vertical-center, .layout-vertical-center section {
 	width: 80vw;
 	height: 50vh;
 	overflow: auto;
@@ -211,32 +199,47 @@ div h1 {
 	top: 0; left: 0; bottom: 0; right: 0; 
 }
 
+
 /* Media Queries Change the Game Up A Little Bit */
 /* Smartphones (portrait and landscape) ----------- */
 @media (max-width : 768px), (max-device-width: 480px)  {
-section div {
-	height: 100vh;
-	padding-top: 20vh;
-	display: block;
+
+body {
+	font-size: 90%;
+}
+
+.navbar {
+	font-size: 1.25em;
+}
+.slide {
+	max-height: 125vh;
+	height: 125vh;
 }
 
 .layout-vertical-center {
-	height: 125vh;
-	width: 90vw;
-	overflow: inherit;
-}
-
-
-.layout-all-center {
-	height: 150vh;
-	width: 100vw;
+	height: 50vh;
+	width: 95vw;
 	overflow: visible;
 }
 
-.layout-all-center.layout-mobile-center {
-	height: 100vh;
-	width: 100vw;
-	overflow: inherit;
+section {
+	padding: 0;
+}
+
+.bg-mission {
+	background-color:rgba(98,165,255,0.75);
+}
+
+.bg-what {
+	background-color:rgba(207,231,255,0.65);
+}
+
+.bg-who {
+	background-color: rgba(255,161,132,0.50);
+}
+
+.bg-join {
+	background-color: rgba(140,181,107,0.40);
 }
 
 h1.wabruda {
