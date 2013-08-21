@@ -36,6 +36,7 @@ $(document).ready(function() {
 	}
 
 
+	var _ignore = false;
 	console.log("Loading Nav.");
 	console.log(window.location.hash);
 	$('.navbar').onePageNav();
@@ -43,10 +44,12 @@ $(document).ready(function() {
 	console.log("LOADED");
 
 	$('li').click(function() {
-		$("li.active").removeClass("active");
-		$(this).addClass('active');
+		//$("li.active").removeClass("active");
+		//$(this).addClass('active');
 		var href = $(this).children("a:first").attr('href');
 		console.log(href);
+		//_ignore = true;
+
 
 	});
 
@@ -102,15 +105,36 @@ $(document).ready(function() {
 	var links =  $('.nav li');
 	var panelIndex;
 
+	//var _ignore = false;
+
+	var slides = $('.slide');
+
 	$(window).scroll(function () {
 		checkLocation();
-	});
+		console.log(_ignore);
 
-	$('.navbar a').click(function() {
-		$("li.active").removeClass("active");
-	});
+		if(_ignore) {
+			return;
+		}
 
-	console.log("Now we're just checking something else...");
+		var currentPos = $(this).scrollTop();
+		slides.each(function() {
+			var top = $(this).offset().top;
+				bottom = top + $(this).height();
+
+				console.log(currentPos >= top && currentPos <= bottom);
+				if (currentPos >= top && currentPos <= bottom) {
+					console.log('NEW SECTION!"');
+					console.log(top);
+					console.log(bottom);
+					console.log(currentPos);
+					links.removeClass('active');
+					var link = $('a[href="#' + this.id + '"]');
+					console.log(link);
+					$(link).parent().addClass('active');
+				} 
+		});
+	});
 
 	$('.nav a').on('click', function() {
 		if ($('.navbar-toggle').is(":visible")) {
