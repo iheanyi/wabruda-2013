@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 	console.log("LOADED");
 
-	$('li').click(function() {
+	/*$('li').click(function() {
 		//$("li.active").removeClass("active");
 		//$(this).addClass('active');
 		var href = $(this).children("a:first").attr('href');
@@ -51,7 +51,7 @@ $(document).ready(function() {
 		//_ignore = true;
 
 
-	});
+	});*/
 
 	var viewportHeight = $(window).height();
 	var viewportWidth = $(window).width();
@@ -77,14 +77,6 @@ $(document).ready(function() {
 		}
 
 		console.log($(window).scrollTop());
-		/*if(window.location.hash == "#home") {
-			console.log("Adding class.");
-			//navbar.addClass('hidden');
-		} else {
-			console.log("Removing class.");
-			navbar.removeClass('hidden');
-		}*/
-
 	}
 	var panelTops = [];
 
@@ -108,32 +100,10 @@ $(document).ready(function() {
 	//var _ignore = false;
 
 	var slides = $('.slide');
+	//$('body').scrollspy({ target: '.navbar-nav' });
 
 	$(window).scroll(function () {
 		checkLocation();
-		console.log(_ignore);
-
-		if(_ignore) {
-			return;
-		}
-
-		var currentPos = $(this).scrollTop();
-		slides.each(function() {
-			var top = $(this).offset().top;
-				bottom = top + $(this).height();
-
-				console.log(currentPos >= top && currentPos <= bottom);
-				if (currentPos >= top && currentPos <= bottom) {
-					console.log('NEW SECTION!"');
-					console.log(top);
-					console.log(bottom);
-					console.log(currentPos);
-					links.removeClass('active');
-					var link = $('a[href="#' + this.id + '"]');
-					console.log(link);
-					$(link).parent().addClass('active');
-				} 
-		});
 	});
 
 	$('.nav a').on('click', function() {

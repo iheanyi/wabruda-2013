@@ -20,13 +20,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
-<body style="zoom: 1;">
+<body data-spy="scroll" data-target="#navbar-scroll" style="zoom: 1;">
     <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
     <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div id="navbar-scroll" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-toggle-collapse">
@@ -39,7 +39,7 @@
 
             <div class="navbar-toggle-collapse navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden" class="active"><a href="#home">Home</a>
+                    <li class="hidden active" ><a href="#home">Home</a>
                     </li>
                     <li><a href="#mission">Our Mission</a>
                     </li>
@@ -54,14 +54,12 @@
         </div>
     </div>
 
-
-
     <div class="slide" id="home">
         <div data-stellar-ratio="0.5" class="bg-top bg-image"></div>
         <section class="top-slide layout-vertical-center text-center">
                 <h1 class="wabruda">Wabruda</h1>
                 <p class="motto">
-                        "I am my Brother's Keeper, and together we shall rise!"</i>
+                        "I am my Brother's Keeper, and together we shall rise!"
                 </p>
         </section>
     </div>
@@ -105,14 +103,12 @@
                 </p>
         </section>
     </div>
-
     <footer>
         <p class="text-center">Designed by <a href="http://www.iheanyi.com">Iheanyi Ekechukwu</a> & <a href="http://www3.nd.edu/~ikwihang/">Romeo Kwihangana</a>
         </p>
 
     </footer>
 
-    <!--</div> <!---- /container -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.5/jquery.scrollTo.min.js"></script>
